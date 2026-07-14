@@ -1,0 +1,17 @@
+profiles:
+  nano:
+    fqbn: arduino:avr:nano:cpu=atmega328
+    platforms:
+      - platform: arduino:avr (1.8.6)
+    libraries:
+      - Adafruit MAX31856 library (1.2.8)
+      - Adafruit BusIO (1.17.4)
+    programmer: ""
+    port: /dev/ttyUSB0
+    port_config:
+      baudrate: "115200"
+      bits: "8"
+      parity: none
+      stop_bits: one
+
+default_profile: nano
